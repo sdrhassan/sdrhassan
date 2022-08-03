@@ -1,0 +1,13 @@
+def get_count(letter):
+    countletter = {}
+        
+    for text1 in letter:
+      countletter[text1] = countletter.get(text1, 0) + 1      
+    return countletter
+
+text = input("Enter text here ! ")
+text = get_count(text)
+
+for letter, count in text.items():
+   print(f'{letter.lower()} : {count} ')
+    
